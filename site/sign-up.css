@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: rgb(245, 237, 226);
+   font-family: 'poppins';
+}
+.animated-text{
+   width: 100%;
+   height: 60px;
+   background-color: rgb(73, 3, 73);
+}
+.animation{
+   animation-name: animate;
+   animation-duration: 30s;
+   animation-timing-function: ease-in;
+   animation-direction: reverse;
+   animation-delay: 0.8s;
+   animation-iteration-count: infinite;
+   color: white;
+   padding-top: 15px;
+   font-size: 20px;
+   font-family: DM Sans;
+   font-weight: 700;
+}
+@keyframes animate {
+   from{
+       transform: translateX(-900px);
+   }
+   to{
+       transform: translateX(0);
+   }
+}
+.nav-menu{
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 0px;
+   width: 100%;
+   background-color: white;
+   margin-bottom: 200px;
+}
+.logo img{
+    width: 250px;
+    margin-left: 60PX;
+}
+.nav-items{
+   list-style: none;
+   display: flex;
+   padding-left: 50px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.nav-items li a{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold ;
+   color: black;
+}
+.nav-items li a:hover{
+   color: orange;
+   transition: 0.5;
+}
+.nav-items li{
+   padding-right: 50px;
+}
+.but1{
+   width: 140px;
+   height: 55px;
+   border-radius: 30px;
+   background-color: rgb(225, 177, 89);
+   font-size: 15px;
+   border: none;
+   margin-right: 50px;
+   font-weight: bold;
+   
+
+}
+.but1:hover{
+   color:white ;
+   background-color: rgb(89, 3, 89);
+   border:none;
+}
+.but1 a{
+    color: black;
+ }
+ .but1:hover a{
+    color: white;
+ }
+.fa-arrow-right{
+   margin-left: 5px ;
+}
+.dropdown-toggle::after{
+   content: '';
+   font-size: 0.em;
+}
+.dropdown-menu{
+   display: none;
+   position: absolute;
+   background-color: gray;
+   min-width: 160px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   margin-top: 0px;
+   padding: 0;
+}
+.dropdown-menu li{
+   list-style: none;
+}
+.dropdown-menu li a{
+   padding: 8px 8px;
+   text-decoration: none;
+   display: block;
+   color: white;
+   transition: background-color 0.3s;
+}
+.dropdown-menu li a:hover{
+   background-color: #575757;
+}
+/* show dropdown on hover */
+.menu-item:hover .dropdown-menu{
+   display: block;
+}
+form{
+    margin-bottom: 100px;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 150px;
+}
+input{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid rgb(203, 201, 201);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+input::placeholder{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+form h2{
+    font-size: 55px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+form button{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(89, 3, 89);
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: none;
+}
+form button:hover{
+    background-color:  rgb(225, 177, 89);
+    color: black;
+    transition: 0.5s;
+}
+form a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(98, 98, 242);
+}
+.secton{
+    background-color: rgb(89, 3, 89); 
+ }
+ .grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 120px;
+    width: 70%;
+    margin: auto;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+ }
+ .grid-section h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ .grid-flex{
+    display: flex;
+    gap: 150px;
+ }
+ .grid-section li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+ }
+ .cool{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .input input{
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ .input input::placeholder {
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+ }
+ .set{
+    display: flex;
+    justify-content: space-between;
+    width: 70%; 
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+ }
+ .yeah{
+    display: flex;
+    gap: 50px;
+ }

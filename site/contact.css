@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family: 'poppins';
+}
+.animated-text{
+   width: 100%;
+   height: 60px;
+   background-color: rgb(73, 3, 73);
+}
+.animation{
+   animation-name: animate;
+   animation-duration: 30s;
+   animation-timing-function: ease-in;
+   animation-direction: reverse;
+   animation-delay: 0.8s;
+   animation-iteration-count: infinite;
+   color: white;
+   padding-top: 15px;
+   font-size: 20px;
+   font-family: DM Sans;
+   font-weight: 700;
+}
+@keyframes animate {
+   from{
+       transform: translateX(-900px);
+   }
+   to{
+       transform: translateX(0);
+   }
+}
+.nav-menu{
+   position: sticky;
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 0px;
+   width: 100%;
+   background-color: white;
+}
+.logo img{
+    width: 250px;
+    margin-left: 60PX;
+}
+.nav-items{
+   list-style: none;
+   display: flex;
+   padding-left: 50px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.nav-items li a{
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold ;
+   color: black;
+}
+.nav-items li a:hover{
+   color: orange;
+   transition: 0.5;
+}
+.nav-items li{
+   padding-right: 50px;
+}
+.but1{
+   width: 140px;
+   height: 55px;
+   border-radius: 30px;
+   background-color: rgb(225, 177, 89);
+   font-size: 15px;
+   border: none;
+   margin-right: 50px;
+   font-weight: bold;  
+}
+.but1:hover{
+   color:white ;
+   background-color: rgb(89, 3, 89);
+   border:none;
+}
+.but1 a{
+   color: black;
+}
+.but1:hover a{
+   color: white;
+}
+.fa-arrow-right{
+   margin-left: 5px ;
+}
+.dropdown-toggle::after{
+   content: '';
+   font-size: 0.em;
+}
+.dropdown-menu{
+   display: none;
+   position: absolute;
+   background-color: gray;
+   min-width: 160px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   margin-top: 0px;
+   padding: 0;
+}
+.dropdown-menu li{
+   list-style: none;
+}
+.dropdown-menu li a{
+   padding: 8px 8px;
+   text-decoration: none;
+   display: block;
+   color: white;
+   transition: background-color 0.3s;
+}
+.dropdown-menu li a:hover{
+   background-color: #575757;
+}
+/* show dropdown on hover */
+.menu-item:hover .dropdown-menu{
+   display: block;
+}
+.section1{
+    background-image:linear-gradient(rgba(14, 0, 52, 0.5), rgba(14, 0, 52, 0.5)),url(page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secto{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+}
+.secto h1{
+    font-size: 90px ;
+}
+.secto p{
+    font-size: 40px;
+    color: rgb(225, 177, 89);
+}
+.secto a{
+    text-decoration: none;
+    color:  white;
+}
+@media only screen and (min-width: 320px) and (max-width: 540px){
+   .secto{
+      padding-top: 60px;
+      padding-bottom: 60px;
+      color: white;
+  }
+   .secto h1{
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 10px;
+   }
+   .secto p{
+      font-size: 20px;
+   }
+}
+.div-section{
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+.div-section h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+@media only screen and (min-width: 320px) and (max-width: 540px){
+   .div-section{
+      padding-top: 20px;
+    margin-bottom: 50px;
+   }
+   .div-section h2{
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+   }
+   form{
+      width: 100%;
+   }
+   
+   }
+
+form{
+    width: 50%;
+    margin: auto;
+
+}
+@media only screen and (min-width: 320px) and (max-width: 540px){
+   .form{
+      display: flex;
+      flex-direction: column;
+   }
+   .form input{
+      width: 500px;
+      padding: 5px;
+      margin-bottom: 10px;
+}
+}
+.form{
+    display: flex;
+    gap: 15px;
+}
+.form input{
+    width: 50%;
+    padding: 25px;
+    margin-bottom: 40px;
+    border: solid 1px rgb(236, 236, 236);
+}
+.form input:hover{
+    background-color: rgb(244, 237, 227);
+    border: none;
+    transition: 0.5s;
+}
+.form input::placeholder{
+    font-size: 15px;
+    font-weight: 550;
+}
+textarea{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    margin-bottom: 40px;
+    border: solid 1px rgb(236, 236, 236);
+}
+textarea::placeholder{
+    font-size: 18px;  
+    font-weight: 550;
+}
+textarea:hover{
+    background-color: rgb(244, 237, 227);
+    transition: 0.5s;
+}
+form button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(89, 3, 89);
+    color: white;
+    border: none;
+}
+form button:hover{
+    background-color: rgb(225, 177, 89);
+    color: black;
+    transition: 0.5s;
+}
+iframe{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 40px;
+}
+.secton{
+    background-color: rgb(89, 3, 89); 
+ }
+ .grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 120px;
+    width: 70%;
+    margin: auto;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+ }
+ .grid-section h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ .grid-flex{
+    display: flex;
+    gap: 150px;
+ }
+ .grid-section li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+ }
+ .cool{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .input input{
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ .input input::placeholder {
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+ }
+ .set{
+    display: flex;
+    justify-content: space-between;
+    width: 70%; 
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+ }
+ .yeah{
+    display: flex;
+    gap: 50px;
+ }
